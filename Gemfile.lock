@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    killbill-litle (1.10.0)
+    killbill-litle (1.10.1)
       actionpack (~> 4.1.0)
       actionview (~> 4.1.0)
       activemerchant (~> 1.44.1)
