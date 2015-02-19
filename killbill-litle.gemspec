@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
 
   s.rdoc_options << '--exclude' << '.'
 
-  s.add_dependency 'killbill', '~> 3.1.12'
+  s.add_dependency 'killbill', '~> 3.1'
   s.add_dependency 'activemerchant', '~> 1.44.1'
   s.add_dependency 'offsite_payments', '~> 2.0.1'
   s.add_dependency 'activerecord', '~> 4.1.0'
@@ -34,10 +34,11 @@ Gem::Specification.new do |s|
   s.add_dependency 'nokogiri', '~> 1.6.1'
   s.add_dependency 'sinatra', '~> 1.3.4'
   if defined?(JRUBY_VERSION)
-    s.add_dependency 'activerecord-jdbcmysql-adapter', '~> 1.3.7'
+    s.add_dependency 'activerecord-jdbc-adapter', '~> 1.3.7'
     # Required to avoid errors like java.lang.NoClassDefFoundError: org/bouncycastle/asn1/DERBoolean
-    s.add_dependency 'jruby-openssl', '~> 0.9.4'
+    s.add_dependency 'jruby-openssl', '~> 0.9.6'
   end
+  s.add_dependency 'activerecord-bogacs', '~> 0.2'
 
   s.add_development_dependency 'jbundler', '~> 0.4.1'
   s.add_development_dependency 'rake', '>= 10.0.0'
